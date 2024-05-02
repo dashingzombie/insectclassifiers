@@ -11,10 +11,11 @@ There should be whitespace between paragraphs. We recommend including a README, 
 # Insect Classifiers
 By Dev Mehrota and Lauren Glynn 
 
->InsectClassifiers.pptx
->Link to github repository.
+[Insect Classifer Slides]([./https://github.com/dashingzombie/insectclassifiers])
 
-## Intro presenting and motivating the problem
+[Link to github repository]([./https://github.com/dashingzombie/insectclassifiers])
+
+## Motivation and Significance
 
 > Challenges with traditional 2D representations of insects (viewing angles, occlusions)
 >
@@ -29,20 +30,9 @@ Insect models are helpful in overcoming viewing angle variations and self-occlus
 ### Methodology
 Your methodology (method, data, evaluation metrics). If applicable, highlight how it differs from prior work (new experiments, new methods, etc)
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+> Previous approaches, such as HoloDiffusion, have employed diffusion models trained on 2D images but may struggle to capture fine textures and details accurately.
+> 
+> Other methods, like DreamCraft3D, use hierarchical 3D generation to improve texture quality but can be computationally expensive.
 
 #### Discussion + quantitative results
 Discussion of quantitative results
@@ -51,20 +41,34 @@ Discussion of quantitative results
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 
-##### Demos of Approach
+*   ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+##### Demos of Approach
+Our Approach: Dream Gaussian Framework
+
+1.  Directly optimizes a Gaussian model from 2D images
+
+2.  Starts with a Gaussian distribution and optimizes its parameters directly from the input 2D images
+
+3.  Convert 3D Gaussians into textured meshes
+
+4.  Apply a fine tuning stage to further refine the details
+
+![Diptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/diptera_99.gif)
+
+![Neuroptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/neuroptera_49.gif)
+
 
 ###### Header 6
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| Approach        | DreamGaussian        | Holodiffusion | DreamCraft 3D |
+|:-------------|:------------------|:------|:----------|
+| Input          |  Directly optimizes from 2D images| Pre-trained on 2D images  |   Initializes a NeRF model with random weights         | 
+| 3D Generation | Renders views from different angles   | Employs diffusion models  | Hierarchial 3D generation approach           |
+| Optimization           | Score distillation loss guides optimization| Trains diffusion models on 2D data   | Bootstrapped Score Distillation Loss           |
+| Texture Quality           | Captures fine-grained details effectively | May struggle with intricate features  | Aims for improved texture quality           ||
+| Computational Complexity           | More efficient | The slowest of all 3  | High computational complexity           ||
+
 
 ### There's a horizontal rule below this.
 
