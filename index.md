@@ -6,21 +6,28 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
-There should be whitespace between paragraphs.
-
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# Insect Classifiers
+By Dev Mehrota and Lauren Glynn 
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+>InsectClassifiers.pptx
+>Link to github repository.
 
-## Header 2
+## Intro presenting and motivating the problem
 
-> This is a blockquote following a header.
+> Challenges with traditional 2D representations of insects (viewing angles, occlusions)
 >
-> When something is important enough, you do it even if the odds are not in your favor.
+> Need for enhanced understanding in entomology, biodiversity research, and pest management
+>
+> Aiding in pest management strategy development
 
-### Header 3
+Insect models are helpful in overcoming viewing angle variations and self-occlusions, which is a common issue in 2D images.  Embracing 3D representation offers a solution to these limitations.  Entomology, along with other fields that have been slower to adopt advanced technologies, stands to gain significant benefits from embracing the active support of these 3D models. The active support of these 3D models will drive advancements in understanding biodiversity and refining pest management strategies, benefiting both entomological research and practical applications in insect control. More broadly, 3D models provide a more comprehensive and realistic representation of insects, which can benefit various applications such as scientific visualization, education, and creative expression [6]. 
+
+
+
+### Methodology
+Your methodology (method, data, evaluation metrics). If applicable, highlight how it differs from prior work (new experiments, new methods, etc)
 
 ```js
 // Javascript code with syntax highlighting.
@@ -37,13 +44,14 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-#### Header 4
+#### Discussion + quantitative results
+Discussion of quantitative results
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 
-##### Header 5
+##### Demos of Approach
 
 1.  This is an ordered list following a header.
 2.  This is an ordered list following a header.
