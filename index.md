@@ -54,6 +54,8 @@ Our Approach: Dream Gaussian Framework
 
 4.  Apply a fine tuning stage to further refine the details
 
+![WesternCornWorm](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/wcrw_500-ezgif.com-video-to-gif-converter.gif)
+
 ![Diptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/diptera_99.gif)
 
 ![Neuroptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/neuroptera_49.gif)
