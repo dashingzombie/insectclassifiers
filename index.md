@@ -43,7 +43,8 @@ Our Approach: Dream Gaussian Framework
 
 ##### Demos of Approach
 
-![WesternCornWorm](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/wcrw_500-ezgif.com-video-to-gif-converter.gif)
+![WesternCornWorm]
+<img src="https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/wcrw_500-ezgif.com-video-to-gif-converter.gif">
 
 ![Diptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/diptera_99.gif)
 
