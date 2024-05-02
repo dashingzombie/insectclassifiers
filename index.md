@@ -1,14 +1,4 @@
----
-layout: default
----
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Insect Classifiers
+# Insect Classifiers: 2D-to-3D
 By Dev Mehrota and Lauren Glynn 
 
 [Insect Classifer Slides]([./https://github.com/dashingzombie/insectclassifiers])
@@ -25,25 +15,12 @@ By Dev Mehrota and Lauren Glynn
 
 Insect models are helpful in overcoming viewing angle variations and self-occlusions, which is a common issue in 2D images.  Embracing 3D representation offers a solution to these limitations.  Entomology, along with other fields that have been slower to adopt advanced technologies, stands to gain significant benefits from embracing the active support of these 3D models. The active support of these 3D models will drive advancements in understanding biodiversity and refining pest management strategies, benefiting both entomological research and practical applications in insect control. More broadly, 3D models provide a more comprehensive and realistic representation of insects, which can benefit various applications such as scientific visualization, education, and creative expression [6]. 
 
-
-
 ### Methodology
-Your methodology (method, data, evaluation metrics). If applicable, highlight how it differs from prior work (new experiments, new methods, etc)
 
 > Previous approaches, such as HoloDiffusion, have employed diffusion models trained on 2D images but may struggle to capture fine textures and details accurately.
 > 
 > Other methods, like DreamCraft3D, use hierarchical 3D generation to improve texture quality but can be computationally expensive.
 
-#### Discussion + quantitative results
-Discussion of quantitative results
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-*   ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-##### Demos of Approach
 Our Approach: Dream Gaussian Framework
 
 1.  Directly optimizes a Gaussian model from 2D images
@@ -54,14 +31,7 @@ Our Approach: Dream Gaussian Framework
 
 4.  Apply a fine tuning stage to further refine the details
 
-![WesternCornWorm](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/wcrw_500-ezgif.com-video-to-gif-converter.gif)
-
-![Diptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/diptera_99.gif)
-
-![Neuroptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/neuroptera_49.gif)
-
-
-###### Header 6
+##### How DreamGaussian Differs from other Approaches
 
 | Approach        | DreamGaussian        | Holodiffusion | DreamCraft 3D |
 |:-------------|:------------------|:------|:----------|
@@ -71,67 +41,23 @@ Our Approach: Dream Gaussian Framework
 | Texture Quality           | Captures fine-grained details effectively | May struggle with intricate features  | Aims for improved texture quality           ||
 | Computational Complexity           | More efficient | The slowest of all 3  | High computational complexity           ||
 
+##### Demos of Approach
 
-### There's a horizontal rule below this.
+![WesternCornWorm](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/wcrw_500-ezgif.com-video-to-gif-converter.gif)
 
-* * *
+![Diptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/diptera_99.gif)
 
-### Here is an unordered list:
+![Neuroptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/neuroptera_49.gif)
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+#### Quantitative Results
 
-### And an ordered list:
+We ran Clip Similarity Score where we render 8 different images from different angles for 100 samples and then evaluated with the preprocessed image
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+*   ![Results](https://github.com/dashingzombie/insectclassifiers/blob/main/data/DreamGaussianResults.png)
 
-### And a nested list:
+#### Discussion
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Data Dependency: Accuracy depends on dataset quality.
+Processing Time: Current implementation is computationally intensive.
+Environmental Sensitivity: Models may struggle with extreme conditions.
+Anatomy Complexity: Complex structures pose challenges.
