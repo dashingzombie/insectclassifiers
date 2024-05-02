@@ -1,6 +1,6 @@
 References
 
-https://github.com/dreamgaussian/dreamgaussian/assets/25863658/db860801-7b9c-4b30-9eb9-87330175f5c8
+https://github.com/dreamgaussian/dreamgaussian/
 
 
 
