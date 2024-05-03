@@ -1,5 +1,5 @@
 # Insect Classifiers: 2D-to-3D
-By Dev Mehrota and Lauren Glynn
+By Dev Mehrotra and Lauren Glynn
 
 
 [Insect Classifer Slides](https://uwprod-my.sharepoint.com/:p:/g/personal/leglynn_wisc_edu/EbHMKGl8CTVBulvhWcyrYJQBgjP4ENtP7L4bLouSrN66mw?e=yl6cD7)
