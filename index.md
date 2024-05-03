@@ -16,7 +16,7 @@ By Dev Mehrota and Lauren Glynn
 
 Insect models are helpful in overcoming viewing angle variations and self-occlusions, which is a common issue in 2D images.  Embracing 3D representation offers a solution to these limitations.  Entomology, along with other fields that have been slower to adopt advanced technologies, stands to gain significant benefits from embracing the active support of these 3D models. The active support of these 3D models will drive advancements in understanding biodiversity and refining pest management strategies, benefiting both entomological research and practical applications in insect control. More broadly, 3D models provide a more comprehensive and realistic representation of insects, which can benefit various applications such as scientific visualization, education, and creative expression [6]. 
 
-### Methodology
+## Methodology
 
 > Previous approaches, such as HoloDiffusion, have employed diffusion models trained on 2D images but may struggle to capture fine textures and details accurately.
 > 
@@ -32,7 +32,7 @@ Our Approach: Dream Gaussian Framework
 
 4.  Apply a fine tuning stage to further refine the details
 
-##### How DreamGaussian Differs from other Approaches
+#### How DreamGaussian Differs from other Approaches
 
 | Approach        | DreamGaussian        | Holodiffusion | DreamCraft 3D |
 |:-------------|:------------------|:------|:----------|
@@ -42,7 +42,7 @@ Our Approach: Dream Gaussian Framework
 | Texture Quality           | Captures fine-grained details effectively | May struggle with intricate features  | Aims for improved texture quality           ||
 | Computational Complexity           | More efficient | The slowest of all 3  | High computational complexity           ||
 
-##### Demos of Approach
+## Demos of Approach
 
 ![wcrw_500-ezgif com-video-to-gif-converter](https://github.com/dashingzombie/insectclassifiers/assets/110515153/2eefab8d-fbca-4264-96e4-3066d5379c88)
 
@@ -50,13 +50,13 @@ Our Approach: Dream Gaussian Framework
 
 ![neuroptera_49](https://github.com/dashingzombie/insectclassifiers/assets/110515153/77564c4c-ca6b-489e-afcc-a830c29f6ab3)
 
-#### Quantitative Results
+## Quantitative Results
 
 We ran a Clip Similarity Score where we render 8 different images from different angles for 100 samples and then evaluated with the preprocessed image
 
 ![DreamGaussianResults](https://github.com/dashingzombie/insectclassifiers/assets/110515153/9b2f8bb5-0c56-4338-894f-7555f667573a)
 
-#### Discussion
+## Discussion
 
 >Data Dependency:
 
