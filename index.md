@@ -1,9 +1,9 @@
 # Insect Classifiers: 2D-to-3D
 By Dev Mehrota and Lauren Glynn 
 
-[Insect Classifer Slides]([./https://github.com/dashingzombie/insectclassifiers])
+[Insect Classifer Slides](https://github.com/dashingzombie/insectclassifiers)
 
-[Link to github repository]([./https://github.com/dashingzombie/insectclassifiers])
+[Link to github repository](https://github.com/dashingzombie/insectclassifiers)
 
 ## Motivation and Significance
 
@@ -51,16 +51,18 @@ Our Approach: Dream Gaussian Framework
 
 #### Quantitative Results
 
-We ran Clip Similarity Score where we render 8 different images from different angles for 100 samples and then evaluated with the preprocessed image
+We ran a Clip Similarity Score where we render 8 different images from different angles for 100 samples and then evaluated with the preprocessed image
 
-*   ![Results](https://github.com/dashingzombie/insectclassifiers/blob/main/data/DreamGaussianResults.png)
+![DreamGaussianResults](https://github.com/dashingzombie/insectclassifiers/assets/110515153/9b2f8bb5-0c56-4338-894f-7555f667573a)
 
 #### Discussion
 
->Data Dependency: Accuracy depends on dataset quality. Improving the dataset with a higher volume and better quality images will make a difference as model's preprocessing was not consistenly removing background in its entirety. 
+>Data Dependency: Accuracy depends on dataset quality. Improving the dataset with a higher volume and better quality images will make a difference as model's preprocessing was not consistenly removing background in its entirety. The values of the Clip Similiarity Score indicate there is room for improvement as an average of 54 percent for this sample.The accuracy of the model heavily relies on the quality of the dataset. Enhancing the dataset with a larger volume of high-quality images is essential. Presently, the model's preprocessing methods have shown inconsistencies in effectively removing backgrounds entirely, impacting its performance.The Clip Similarity Score serves as a crucial metric indicating the alignment between predicted and ground truth segments. With an average score of 54%, there is evident room for improvement. This suggests that the model's ability to accurately match segments with their corresponding ground truth representations can be enhanced. Achieving a higher Clip Similarity Score would imply a closer alignment between predicted and actual segmentations, leading to improved model performance and reliability.
+
+Addressing these issues through dataset augmentation, refined preprocessing techniques, and possibly model architecture adjustments can contribute to significant enhancements in accuracy and overall performance
 > 
 >Processing Time: Current implementation is computationally intensive.
 > 
 >Anatomy Complexity: Capturing the intricate and fine texture of insect anatomy pose a challenge for the model.
 >
->
+
