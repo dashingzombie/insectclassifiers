@@ -14,7 +14,7 @@ By Dev Mehrota and Lauren Glynn
 >
 > Aiding in pest management strategy development
 
-Insect models are helpful in overcoming viewing angle variations and self-occlusions, which is a common issue in 2D images.  Embracing 3D representation offers a solution to these limitations.  Entomology, along with other fields that have been slower to adopt advanced technologies, stands to gain significant benefits from embracing the active support of these 3D models. The active support of these 3D models will drive advancements in understanding biodiversity and refining pest management strategies, benefiting both entomological research and practical applications in insect control. More broadly, 3D models provide a more comprehensive and realistic representation of insects, which can benefit various applications such as scientific visualization, education, and creative expression [6]. 
+Insect models are helpful in overcoming viewing angle variations and self-occlusions, which is a common issue in 2D images.  Embracing 3D representation offers a solution to these limitations.  Entomology, along with other fields that have been slower to adopt advanced technologies, stands to gain significant benefits from embracing the active support of these 3D models. The active support of these 3D models will drive advancements in understanding biodiversity and refining pest management strategies, benefiting both entomological research and practical applications in insect control. More broadly, 3D models provide a more comprehensive and realistic representation of insects, which can benefit various applications such as scientific visualization, education, and creative expression [1]. 
 
 ## Methodology
 
@@ -60,16 +60,20 @@ We ran a Clip Similarity Score where we render 8 different images from different
 
 >Data Dependency:
 
-Accuracy depends on dataset quality. Improving the dataset with a higher volume and better quality images will make a difference as DreamGaussian was not consistenly removing background in its entirety. The values of the Clip Similiarity Score indicate there is room for improvement as an average of 54 percent for this sample.The accuracy of the model heavily relies on the quality of the dataset. Enhancing the dataset with a larger volume of high-quality images is essential. Presently, the framework's preprocessing methods have shown inconsistencies in effectively removing backgrounds entirely, impacting its performance.The Clip Similarity Score serves as a crucial metric indicating the alignment between predicted and ground truth segments. With an average score of 54%, there is evident room for improvement. 
+Accuracy depends on dataset quality. Improving the dataset with a higher volume and better quality images will make a difference as DreamGaussian was not consistenly removing background in its entirety. The values of the Clip Similiarity Score indicate there is room for improvement as an average of 54 percent for this sample.The accuracy of the model heavily relies on the quality of the dataset. Enhancing the dataset with a larger volume of high-quality images is essential. Presently, the framework's preprocessing methods have shown inconsistencies in effectively removing backgrounds entirely, impacting its performance.The Clip Similarity Score serves as a metric indicating the alignment between predicted and ground truth segments. With an average score of 54%, there is evident room for improvement. 
 
 Addressing these issues through dataset augmentation and refined preprocessing techniques can contribute to significant enhancements in accuracy and overall performance.
  
 >Processing Time:
 
-The current implementation is computationally intensive, necessitating exploration of alternative models. One promising option is Plenoxel, a view-dependent sparse voxel model.  Plenoxels rely on a a simple and explicit volumetric representation that be optimized from calibrated images via gradient methods and regularization without any neural components.
+The current implementation is computationally intensive, necessitating exploration of alternative models. One promising option is Plenoxel, a view-dependent sparse voxel model.  Plenoxels rely on a a simple and explicit volumetric representation that be optimized from calibrated images via gradient methods and regularization without any neural components [2].
  
 >Anatomy Complexity:
 
 Capturing the intricate and fine texture of insect anatomy poses a significant challenge for the model due to the complexity of the data. To address this challenge effectively, it's important to gain a deeper understanding of how the framework handles more complex data structures. By comprehensively understanding the framework's capabilities and limitations in processing intricate details, we can develop approaches to create better datasets tailored to the specific nuances of insect anatomy.
 
+### References
 
+1.	X. Zhang, Y. Gao and T. Caelli. (2010). Primitive-based 3D structure inference from a single 2D image for insect modeling: Towards an electronic field guide for insect identification. In Proceedings of the 2010 11th International Conference on Control Automation Robotics & Vision (pp. 866-871). Singapore. doi: 10.1109/ICARCV.2010.5707814
+
+2.	Yu, A., Fridovich-Keil, S., Tancik, M., Chen, Q., Recht, B., & Kanazawa, A. (2021). Plenoxels: Radiance Fields without Neural Networks. arXiv preprint arXiv:2112.05131.
