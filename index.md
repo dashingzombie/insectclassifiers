@@ -2,7 +2,7 @@
 By Dev Mehrota and Lauren Glynn
 
 
-[Insect Classifer Slides](https://github.com/dashingzombie/insectclassifiers)
+[Insect Classifer Slides](https://uwprod-my.sharepoint.com/:p:/g/personal/leglynn_wisc_edu/EbHMKGl8CTVBulvhWcyrYJQBgjP4ENtP7L4bLouSrN66mw?e=yl6cD7)
 
 [Link to github repository](https://github.com/dashingzombie/insectclassifiers)
 
@@ -66,10 +66,10 @@ Addressing these issues through dataset augmentation and refined preprocessing t
  
 >Processing Time:
 
-Current implementation is computationally intensive.
+Current implementation is computationally intensive. 
  
 >Anatomy Complexity:
 
->Capturing the intricate and fine texture of insect anatomy pose a challenge for the model.
+Capturing the intricate and fine texture of insect anatomy poses a significant challenge for the model due to the complexity of the data. To address this challenge effectively, it's important to gain a deeper understanding of how the framework handles more complex data structures. By comprehensively understanding the framework's capabilities and limitations in processing intricate details, we can develop approaches to create better datasets tailored to the specific nuances of insect anatomy.
 
 
