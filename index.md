@@ -4,8 +4,6 @@ By Dev Mehrotra and Lauren Glynn
 
 [Insect Classifer Slides](https://uwprod-my.sharepoint.com/:p:/g/personal/leglynn_wisc_edu/EbHMKGl8CTVBulvhWcyrYJQBgjP4ENtP7L4bLouSrN66mw?e=yl6cD7)
 
-[Link to Github Repository](https://github.com/dashingzombie/insectclassifiers)
-
 ## Motivation and Significance
 
 > Challenges with traditional 2D representations of insects (viewing angles, occlusions)
