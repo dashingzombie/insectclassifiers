@@ -66,7 +66,7 @@ Addressing these issues through dataset augmentation and refined preprocessing t
  
 >Processing Time:
 
-The current implementation is computationally intensive, necessitating exploration of alternative models. One promising option is Plenoxel, a view-dependent sparse voxel model.  Plenoxels rely on a a simple and explicit volumetric representation that be optimized from calibrated images via gradient methods and regularization without any neural components [2].
+The current implementation is computationally intensive, necessitating exploration of alternative models. One promising option is Plenoxel, a view-dependent sparse voxel model.  Plenoxels rely on a a simple and explicit volumetric representation that can be optimized from calibrated images via gradient methods and regularization without any neural components [2].
  
 >Anatomy Complexity:
 
