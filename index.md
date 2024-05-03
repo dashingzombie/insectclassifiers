@@ -60,7 +60,7 @@ We ran a Clip Similarity Score where we render 8 different images from different
 
 >Data Dependency:
 
-Accuracy depends on dataset quality. Improving the dataset with a higher volume and better quality images will make a difference as DreamGaussian was not consistenly removing background in its entirety. The values of the Clip Similiarity Score indicate there is room for improvement as an average of 54 percent for this sample.The accuracy of the model heavily relies on the quality of the dataset. Enhancing the dataset with a larger volume of high-quality images is essential. Presently, the framework's preprocessing methods have shown inconsistencies in effectively removing backgrounds entirely, impacting its performance.The Clip Similarity Score serves as a metric indicating the alignment between predicted and ground truth segments. With an average score of 54%, there is evident room for improvement. 
+The accuracy heavily relies on the quality of the dataset. The values of the Clip Similiarity Score indicate there is room for improvement as an average of 54 percent for this sample. The Clip Similarity Score serves as a metric indicating the alignment between predicted and ground truth segments.  Enhancing the dataset with a larger volume of high-quality images is essential. Presently, the framework's preprocessing methods have shown inconsistencies in effectively removing backgrounds entirely, likely impacting its performance.
 
 Addressing these issues through dataset augmentation and refined preprocessing techniques can contribute to significant enhancements in accuracy and overall performance.
  
