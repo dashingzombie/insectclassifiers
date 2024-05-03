@@ -45,11 +45,9 @@ Our Approach: Dream Gaussian Framework
 
 ![wcrw_500-ezgif com-video-to-gif-converter](https://github.com/dashingzombie/insectclassifiers/assets/110515153/2eefab8d-fbca-4264-96e4-3066d5379c88)
 
-![image](https://github.com/dashingzombie/insectclassifiers/assets/53788170/4bf582e8-a947-4a23-8046-997fae47544e)
+![diptera_99](https://github.com/dashingzombie/insectclassifiers/assets/110515153/85444a46-4e2d-4025-a85c-29bf082a16e7)
 
-![Diptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/diptera_99.gif)
-
-![Neuroptera](https://github.com/dashingzombie/insectclassifiers/blob/main/gifs/neuroptera_49.gif)
+![neuroptera_49](https://github.com/dashingzombie/insectclassifiers/assets/110515153/77564c4c-ca6b-489e-afcc-a830c29f6ab3)
 
 #### Quantitative Results
 
@@ -59,7 +57,10 @@ We ran Clip Similarity Score where we render 8 different images from different a
 
 #### Discussion
 
-Data Dependency: Accuracy depends on dataset quality.
-Processing Time: Current implementation is computationally intensive.
-Environmental Sensitivity: Models may struggle with extreme conditions.
-Anatomy Complexity: Complex structures pose challenges.
+>Data Dependency: Accuracy depends on dataset quality. Improving the dataset with a higher volume and better quality images will make a difference as model's preprocessing was not consistenly removing background in its entirety. 
+> 
+>Processing Time: Current implementation is computationally intensive.
+> 
+>Anatomy Complexity: Capturing the intricate and fine texture of insect anatomy pose a challenge for the model.
+>
+>
