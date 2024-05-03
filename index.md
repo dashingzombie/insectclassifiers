@@ -60,7 +60,7 @@ We ran a Clip Similarity Score where we render 8 different images from different
 
 >Data Dependency:
 
-The accuracy heavily relies on the quality of the dataset. The values of the Clip Similiarity Score indicate there is room for improvement as an average of 54 percent for this sample. The Clip Similarity Score serves as a metric indicating the alignment between predicted and ground truth segments.  Enhancing the dataset with a larger volume of high-quality images is essential. Presently, the framework's preprocessing methods have shown inconsistencies in effectively removing backgrounds entirely, likely impacting its performance.
+The accuracy heavily relies on the quality of the dataset. The Clip Similarity Score serves as a metric indicating the alignment between predicted and ground truth segments. The values of the Clip Similiarity Score indicate there is room for improvement as an average of 54 percent for this sample. Enhancing the dataset with a larger volume of high-quality images is essential. Presently, the framework's preprocessing methods have shown inconsistencies in effectively removing backgrounds entirely, likely impacting its performance.
 
 Addressing these issues through dataset augmentation and refined preprocessing techniques can contribute to significant enhancements in accuracy and overall performance.
  
